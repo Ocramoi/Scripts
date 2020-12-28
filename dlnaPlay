@@ -1,0 +1,3 @@
+#!/bin/bash
+# simple-dlna-browser from 'https://github.com/javier-lopez/learn/blob/master/sh/tools/simple-dlna-browser' by Javier Lopez
+simple-dlna-browser "$@" | grep http | tr '\n' ' ' | xargs mpv
